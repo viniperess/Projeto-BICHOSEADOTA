@@ -68,6 +68,10 @@ include_once('controles/logica/conecta.php');
     <?php
        }
     ?>  -->
+    <div class="container-fluid">
+    <section class="display-6 d-flex justify-content-center py-3" style="color:#472478;">  <em>Venha conhecer nossos pets </section>
+
+    </div>
     <?php
        
          if(isset($_POST['pesquisar'])){
@@ -84,8 +88,12 @@ include_once('controles/logica/conecta.php');
                 <section>
                     <p>Não há pets disponíveis.</p>
                 </section>
+
+                
             <?php
+            
         }
+        
         foreach($pets as $pet){
                  
             ?>
@@ -121,6 +129,7 @@ include_once('controles/logica/conecta.php');
     
      
     ?>
+    
     </div>
     <footer class="col-12 coll d-flex">       
         <img src="./imagens/banner2.1.png" class="img mt-3 w-100" >
